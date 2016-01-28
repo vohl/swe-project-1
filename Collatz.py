@@ -6,6 +6,8 @@
 # Glenn P. Downing
 # ---------------------------
 
+cache = [None]*1000001
+
 #------------
 #cycle_length
 #------------
@@ -15,15 +17,22 @@ def cycle_length (n) :
     return the calculated cycle length for n
     """
     assert n > 0
+    if cache[n] != None :
+        return cache[n]
+    m = n
     count = 1
-    while n > 1 :
-        if (n % 2) == 0 :
-            n = (n // 2)
+    while m > 1 :
+        if cache[m] != None :
+            cache[n] = cache[m] + count - 1
+            return cache[m] + count - 1
+        if (m % 2) == 0 :
+            m = (m // 2)
             count += 1
         else :
-            n = n + (n // 2) + 1
+            m = m + (m // 2) + 1
             count += 2
     assert count > 0
+    cache[n] = count
     return count
 
 # ------------
