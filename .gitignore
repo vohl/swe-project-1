@@ -4,3 +4,5 @@ __pycache__
 .coverage
 *.pyc
 *.tmp
+rangeProducer.py
+rangeSet.out
