@@ -1,0 +1,59 @@
+commit a7af3615e3c8d57e277558b4006ac115f2ed2ef4
+Author: vohl <acvohl@gmail.com>
+Date:   Sat Jan 30 12:42:19 2016 -0600
+
+    passing sphereOnline, Close #13
+
+commit 536890cf7c9917ae264f64b79fd83ace5189003c
+Author: vohl <acvohl@gmail.com>
+Date:   Fri Jan 29 18:10:56 2016 -0600
+
+    Done, now just have to get turn in ready
+
+commit da6b98502685afe7cb9657c799a0e3a478324f22
+Author: vohl <acvohl@gmail.com>
+Date:   Fri Jan 29 16:45:30 2016 -0600
+
+    Meta cache done, lazy cache code isn't fully covered by test. Close #15, and Close #14
+
+commit 310764f328b8ca09fc01bf61cf9c4f2e10a44fce
+Author: vohl <acvohl@gmail.com>
+Date:   Thu Jan 28 14:48:16 2016 -0600
+
+    cache bruh. fix #16
+
+commit 7916cb17797af9ea97e02467531f61831ebb5f88
+Author: vohl <acvohl@gmail.com>
+Date:   Wed Jan 27 23:24:52 2016 -0600
+
+    Created the SphereCollatz.py file ;p
+
+commit 0d1929d5a3c2f2ea7e1e9efd4aeee938c300f6b8
+Author: vohl <acvohl@gmail.com>
+Date:   Wed Jan 27 22:54:48 2016 -0600
+
+    Close #11, lazy solution complete
+
+commit 580339e73311956f05de1705cb4636f04deec70e
+Author: vohl <acvohl@gmail.com>
+Date:   Wed Jan 27 00:33:36 2016 -0600
+
+    Fix #8, and fix #9
+
+commit 9908a43b98e1f4df8a9ea2ea588072cc86779108
+Author: vohl <acvohl@gmail.com>
+Date:   Tue Jan 26 13:24:11 2016 -0600
+
+    Fixes #4, and fixes #6. Close #7.
+
+commit 72006fe500f892f6f6e66e8c05abf63617b5cc84
+Author: vohl <acvohl@gmail.com>
+Date:   Tue Jan 26 01:25:11 2016 -0600
+
+    This closes #1, closes #2, closes #3, and closes #5
+
+commit fe5c0f5f1b5d82cc49c8b56d1932192830462f88
+Author: vohl <acvohl@gmail.com>
+Date:   Mon Jan 25 22:10:03 2016 -0600
+
+    First commit for project Collatz
