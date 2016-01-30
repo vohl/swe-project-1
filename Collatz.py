@@ -27,7 +27,7 @@ def cycle_length (n) :
     m = n
     count = 1
     while m > 1 :
-        if m < 1000000 :
+        if m < 600000 :
             if cache[m] != None :
                 cache[n] = cache[m] + count - 1
                 return cache[m] + count - 1

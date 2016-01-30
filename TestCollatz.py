@@ -55,8 +55,8 @@ class TestCollatz (TestCase) :
     # ----
 
     def test_eval_zero_range (self) :
-        v = collatz_eval(10, 10)
-        self.assertEqual(v, 7)
+        v = collatz_eval(5, 5)
+        self.assertEqual(v, 6)
 
     def test_cache_for_3 (self) :
         v = collatz_eval(3, 3)
@@ -106,10 +106,10 @@ class TestCollatz (TestCase) :
     # -----
 
     def test_solve_all_ones (self) :
-        r = StringIO("10 10\n3 3\n1 1\n")
+        r = StringIO("5 5\n3 3\n1 1\n")
         w = StringIO()
         collatz_solve(r, w)
-        self.assertEqual(w.getvalue(), "10 10 7\n3 3 8\n1 1 1\n")
+        self.assertEqual(w.getvalue(), "5 5 6\n3 3 8\n1 1 1\n")
 
     def test_solve (self) :
         r = StringIO("1 10\n1 10\n100 200\n201 210\n900 1000\n")
