@@ -138,6 +138,10 @@ def collatz_solve (r, w) :
     """
     #Should I use asserts for this or nah
     for s in r :
-        i, j = collatz_read(s)
-        v    = collatz_eval(i, j)
-        collatz_print(w, i, j, v)
+        s = s.strip()
+        if not s :
+        	pass
+        else :
+        	i, j = collatz_read(s)
+        	v    = collatz_eval(i, j)
+        	collatz_print(w, i, j, v)
