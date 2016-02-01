@@ -30,7 +30,7 @@ def cycle_length (n) :
         if m < 600000 :
             if cache[m] != None :
                 cache[n] = cache[m] + count - 1
-                return cache[m] + count - 1
+                return cache[n]
         if (m % 2) == 0 :
             m = (m // 2)
             count += 1
@@ -125,7 +125,6 @@ def collatz_print (w, i, j, v) :
     assert j != None
     assert v != None
     w.write(str(i) + " " + str(j) + " " + str(v) + "\n")
-    #w.write(str(v) + ", ")
 
 # -------------
 # collatz_solve

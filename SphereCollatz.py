@@ -121,7 +121,6 @@ def collatz_print (w, i, j, v) :
     assert j != None
     assert v != None
     w.write(str(i) + " " + str(j) + " " + str(v) + "\n")
-    #w.write(str(v) + ", ")
 
 # -------------
 # collatz_solve
@@ -134,10 +133,7 @@ def collatz_solve (r, w) :
     """
     #Should I use asserts for this or nah
     for s in r :
-        s = s.strip()
-        if not s :
-        	pass
-        else :
+        if s.strip() :
         	i, j = collatz_read(s)
         	v    = collatz_eval(i, j)
         	collatz_print(w, i, j, v)
