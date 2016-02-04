@@ -1,0 +1,16 @@
+.......
+----------------------------------------------------------------------
+coverage3 run    --branch TestCollatz.py >  TestCollatz.tmp 2>&1
+coverage3 report -m                      >> TestCollatz.tmp
+cat TestCollatz.tmp
+....................
+----------------------------------------------------------------------
+Ran 20 tests in 0.159s
+
+OK
+Name             Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------
+Collatz.py          47      0     24      1    99%   98->-73
+TestCollatz.py      83      0      0      0   100%   
+------------------------------------------------------------
+TOTAL              130      0     24      1    99%   
