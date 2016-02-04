@@ -1,20 +1,11 @@
-Coverage.py warning: No data was collected.
-Traceback (most recent call last):
-  File "/lusr/bin/coverage3", line 9, in <module>
-    load_entry_point('coverage==4.0.3', 'console_scripts', 'coverage3')()
-  File "/lusr/lib/python3.4/dist-packages/coverage/cmdline.py", line 741, in main
-    status = CoverageScript().command_line(argv)
-  File "/lusr/lib/python3.4/dist-packages/coverage/cmdline.py", line 481, in command_line
-    return self.do_run(options, args)
-  File "/lusr/lib/python3.4/dist-packages/coverage/cmdline.py", line 620, in do_run
-    self.run_python_file(filename, args)
-  File "/lusr/lib/python3.4/dist-packages/coverage/execfile.py", line 173, in run_python_file
-    code = make_code_from_py(filename)
-  File "/lusr/lib/python3.4/dist-packages/coverage/execfile.py", line 212, in make_code_from_py
-    code = compile_unicode(source, filename, "exec")
-  File "/lusr/lib/python3.4/dist-packages/coverage/phystokens.py", line 287, in compile_unicode
-    code = compile(source, filename, mode)
-  File "TestCollatz.py", line 27
-    v = cycle_length(5)
-                      ^
-TabError: inconsistent use of tabs and spaces in indentation
+...................
+----------------------------------------------------------------------
+Ran 19 tests in 0.018s
+
+OK
+Name             Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------
+Collatz.py          73      1     28      1    98%   142, 141->142
+TestCollatz.py      83      1      2      1    98%   144, 141->144
+------------------------------------------------------------
+TOTAL              156      2     30      2    98%   
